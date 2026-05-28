@@ -6,20 +6,20 @@
 /*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/18 14:23:23 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/19 10:24:19 by jumoreir         ###   ########.fr       */
+/*   Updated: 2026/05/22 16:00:17 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-	if(c >= 65 && c <= 90)
+	if (c >= 65 && c <= 90)
 	{
-		return(c + 32);
+		return (c + 32);
 	}
 	else
 	{
-		return(c);
+		return (c);
 	}
 }

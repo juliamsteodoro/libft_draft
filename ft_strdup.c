@@ -1,34 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   strdup.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/18 12:50:57 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/22 15:57:41 by jumoreir         ###   ########.fr       */
+/*   Created: 2026/05/26 10:09:16 by jumoreir          #+#    #+#             */
+/*   Updated: 2026/05/26 10:36:17 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_strdup(const char *s)
 {
 	size_t	i;
+	char	*copy;
 
 	i = 0;
-	if (n == 0)
-		return (0);
-	while (s1[i] == s2[i] && s1[i] != '\0')
+	while (s[i] != '\0')
 	{
-		if (i < (n - 1))
-		{
-			i++;
-		}
-		else
-		{
-			return (0);
-		}	
+		i++;
 	}
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	copy = malloc(sizeof(char) * (i + 1));
+	if (!copy)
+	{
+		return (NULL);
+	}
+	i = 0;
+	while (s[i])
+	{
+		copy[i] = s[i];
+		i++;
+	}
+	copy[i] = '\0';
+	return (copy);
 }
