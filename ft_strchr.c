@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -31,3 +32,20 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (0);
 }
+
+/*int main(void)
+{
+	char *result;
+	char *str;
+
+	str = "Taylor Swift";
+
+	result = ft_strchr(str, 'S');
+
+	if(result)
+		printf("Encontrado: %s\n", result);
+	else
+		printf("Não encontrado\n");
+	return(0);
+}
+	*/

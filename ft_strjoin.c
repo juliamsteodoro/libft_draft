@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 13:58:20 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/26 14:07:02 by jumoreir         ###   ########.fr       */
+/*   Updated: 2026/05/29 18:59:53 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -23,3 +24,14 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(s3, s2, len + 1);
 	return (s3);
 }
+
+/*int main(void)
+{
+	char s1[] = "Taylor ";
+	char s2[] = "Swift";
+
+	printf("Antes: %s, %s\n", s1, s2);
+	printf("Depois: %s\n", ft_strjoin(s1,s2));
+	return(0);
+}
+*/

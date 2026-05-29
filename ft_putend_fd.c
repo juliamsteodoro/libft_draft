@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putend_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/28 12:11:20 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/28 16:18:17 by jumoreir         ###   ########.fr       */
+/*   Updated: 2026/05/29 19:33:54 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <unistd.h>
 
 void	ft_putendl_fd(char *s, int fd)
 {
@@ -27,3 +28,11 @@ void	ft_putendl_fd(char *s, int fd)
 	write(fd, "\n", 1);
 	return ;
 }
+/*int main(void)
+{
+	ft_putendl_fd("42 São Paulo", 1);
+	ft_putendl_fd("Taylor Swift", 1);
+	ft_putendl_fd("The Tortured Poets Department", 1);
+	return(0);
+}
+	*/

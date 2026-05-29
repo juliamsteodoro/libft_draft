@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 15:04:41 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/28 16:11:01 by jumoreir         ###   ########.fr       */
+/*   Updated: 2026/05/29 14:59:35 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 static long int	len(int n)
 {
@@ -60,3 +61,19 @@ char	*ft_itoa(int n)
 	}
 	return (number);
 }
+
+/*int main(void)
+{
+	char	*str;
+	
+	str = ft_itoa(-42);
+	printf("%s\n", str);
+	
+	str = ft_itoa(0);
+	printf("%s\n", str);
+
+	str = ft_itoa(1989);
+	printf("%s\n", str);
+	return(0);
+}
+	*/

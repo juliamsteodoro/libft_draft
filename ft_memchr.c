@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/18 17:34:14 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/22 15:39:04 by jumoreir         ###   ########.fr       */
+/*   Updated: 2026/05/29 18:59:07 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -21,9 +22,20 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	ptr = (unsigned char *) s;
 	while (i < n)
 	{
-		if (prt[i] == c)
+		if (ptr[i] == c)
 			return ((void *)&ptr[i]);
 		i++;
 	}
 	return (NULL);
 }
+
+/*int main(void)
+{
+	char str[] = "Taylor Swift";
+	char *result;
+
+	result = ft_memchr(str, 'T', 12);
+	printf("%s\n", result);
+	return(0);
+}
+	*/

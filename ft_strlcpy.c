@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 size_t	ft_strlcpy( char *dst, const char *src, size_t size)
 {
@@ -34,3 +35,17 @@ size_t	ft_strlcpy( char *dst, const char *src, size_t size)
 	}
 	return (s);
 }
+
+/*int main(void)
+{
+	char dst[] = "Taylor ";
+	char src[] = "Alison Swift, an american singer.";
+	long unsigned int result;
+
+	printf("Antes: %s\n", dst);
+	result = ft_strlcat(dst, src, 20);
+	printf("Depois: %s\n", dst);
+	printf("Retorno: %li\n", result);
+	return(0);
+}
+	*/

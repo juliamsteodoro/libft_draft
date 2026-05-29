@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 10:40:31 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/28 16:38:31 by jumoreir         ###   ########.fr       */
+/*   Updated: 2026/05/29 18:58:21 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,13 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero (array, count * size);
 	return (array);
 }
+
+/*int main(void)
+{
+	char	*ptr;
+
+	ptr = ft_calloc(13, sizeof(char));
+	printf("Depois: %s\n", ptr);
+	return(0);
+}
+	*/

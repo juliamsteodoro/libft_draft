@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/15 18:28:20 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/28 16:41:28 by jumoreir         ###   ########.fr       */
+/*   Updated: 2026/05/29 14:45:06 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ int	ft_isalnum(int c)
 }
 /*int	main(void)
 {
-	printf("%d\n", ft_isalnum('A'));
-	printf("%d\n", ft_isalnum('z'));
-	printf("%d\n", ft_isalnum('5'));
+	printf("%d\n", ft_isalnum('T'));
+	printf("%d\n", ft_isalnum('s'));
+	printf("%d\n", ft_isalnum('1'));
 	printf("%d\n", ft_isalnum('@'));
 	printf("%d\n", ft_isalnum(' '));
 	return (0);

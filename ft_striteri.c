@@ -3,18 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/28 10:24:57 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/28 16:14:26 by jumoreir         ###   ########.fr       */
+/*   Updated: 2026/05/29 18:59:49 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
+
+static void	to_upper(unsigned int i, char *c)
+{
+	(void)i;
+	*c = ft_toupper(*c);
+}
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	size_t	i;
+	unsigned int	i;
 
 	i = 0;
 	if (!s || !f)
@@ -26,3 +33,16 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 	return ;
 }
+
+/*int main(void)
+{
+	char string[] = "the tortured poets department";
+
+	printf("Antes: %s\n", string);
+
+	ft_striteri(string, to_upper);
+
+	printf("Depois: %s\n", string);
+	return(0);
+}
+*/

@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 11:41:15 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/28 16:30:59 by jumoreir         ###   ########.fr       */
+/*   Updated: 2026/05/29 18:58:11 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
-#include "libft.h"
+//#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -48,9 +48,9 @@ int	ft_atoi(const char *str)
 	printf("%d\n", ft_atoi("   -42"));
 	printf("%d\n", ft_atoi("   +123"));
 	printf("%d\n", ft_atoi("0"));
-	printf("%d\n", ft_atoi("214"));
-	printf("%d\n", ft_atoi("   999abc"));
-	printf("%d\n", ft_atoi("abc123"));
+	printf("%d\n", ft_atoi("1989"));
+	printf("%d\n", ft_atoi("   ts1989"));
+	printf("%d\n", ft_atoi("ts13"));
 	return (0);
 }
 */

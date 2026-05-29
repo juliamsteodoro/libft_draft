@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 10:52:48 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/26 10:41:26 by jumoreir         ###   ########.fr       */
+/*   Updated: 2026/05/29 18:59:11 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -31,3 +32,23 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+/*int main(void)
+{
+	char s1[] = "Taylor";
+	char s2[] = "TaylorSwift";
+
+	printf("%d\n", ft_memcmp(s1, s2, 12));
+	
+	char s3[] = "TaylorSwift";
+	char s4[] = "TaylorSwift";
+
+	printf("%d\n", ft_memcmp(s3, s4, 12));
+	
+	char s5[] = "TaylorSwift";
+	char s6[] = "Taylor";
+
+	printf("%d\n", ft_memcmp(s5, s6, 12));
+	return(0);
+}
+*/

@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 size_t	ft_strlen(const char *src)
 {
@@ -23,3 +24,15 @@ size_t	ft_strlen(const char *src)
 	}
 	return (i);
 }
+
+/*int main(void)
+{
+	char src[] = "Taylor Swift";
+	long int result;
+
+	printf("String: %s\n", src);
+	result = ft_strlen(src);
+	printf("Resultado: %li\n", result);
+	return(0);
+}
+	*/
