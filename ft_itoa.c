@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 15:04:41 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/31 11:15:06 by marvin           ###   ########.fr       */
+/*   Updated: 2026/05/31 12:00:07 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ static long int	ft_numlen(int n)
 {
 	long int	count;
 
+	count = 0;
 	if (n == 0)
 		return (1);
 	if (n < 0)
