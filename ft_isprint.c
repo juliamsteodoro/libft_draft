@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/15 18:44:09 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/29 18:58:58 by marvin           ###   ########.fr       */
+/*   Updated: 2026/05/30 21:45:08 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,7 @@ int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);
-	else
-		return (0);
+	return (0);
 }
 
 /*int main(void)

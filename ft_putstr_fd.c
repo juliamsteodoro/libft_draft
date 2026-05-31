@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/28 12:06:04 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/29 16:20:18 by marvin           ###   ########.fr       */
+/*   Updated: 2026/05/30 22:19:48 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,9 @@ void	ft_putstr_fd(char *s, int fd)
 		return ;
 	while (s[i])
 	{
-		write(fd, &s[i], 1);
+		ft_putchar_fd(s[i], fd);
 		i++;
 	}
-	return ;
 }
 
 /*int main(void)

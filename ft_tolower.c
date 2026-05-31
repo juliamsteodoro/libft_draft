@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/18 14:23:23 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/29 19:00:33 by marvin           ###   ########.fr       */
+/*   Updated: 2026/05/31 10:51:29 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,9 @@
 
 int	ft_tolower(int c)
 {
-	if (c >= 65 && c <= 90)
-	{
+	if (c >= 'A' && c <= 'Z')
 		return (c + 32);
-	}
-	else
-	{
-		return (c);
-	}
+	return (c);
 }
 
 /*int main(void)

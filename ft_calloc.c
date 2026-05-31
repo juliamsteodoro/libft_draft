@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 10:40:31 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/29 18:58:21 by marvin           ###   ########.fr       */
+/*   Updated: 2026/05/30 21:39:07 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,8 @@ void	*ft_calloc(size_t count, size_t size)
 
 	array = malloc(count * size);
 	if (!array)
-	{
 		return (NULL);
-	}
-	ft_bzero (array, count * size);
+	ft_bzero(array, count * size);
 	return (array);
 }
 

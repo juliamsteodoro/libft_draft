@@ -6,18 +6,12 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/28 10:25:43 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/29 19:00:09 by marvin           ###   ########.fr       */
+/*   Updated: 2026/05/31 10:37:36 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <stdio.h>
-
-static char	to_upper(unsigned int i, char c)
-{
-	(void)i;
-	return (ft_toupper(c));
-}
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

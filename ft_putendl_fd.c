@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putend_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/28 12:11:20 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/29 19:33:54 by marvin           ###   ########.fr       */
+/*   Updated: 2026/05/31 11:15:51 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,10 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	size_t	i;
-
-	i = 0;
 	if (!s)
 		return ;
-	while (s[i])
-	{
-		write(fd, &s[i], 1);
-		i++;
-	}
-	write(fd, "\n", 1);
-	return ;
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
 }
 /*int main(void)
 {

@@ -6,18 +6,17 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 15:04:41 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/29 14:59:35 by marvin           ###   ########.fr       */
+/*   Updated: 2026/05/31 11:15:06 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <stdio.h>
 
-static long int	len(int n)
+static long int	ft_numlen(int n)
 {
-	size_t	len;
+	long int	count;
 
-	len = 0;
 	if (n == 0)
 		return (1);
 	if (n < 0)
@@ -25,33 +24,30 @@ static long int	len(int n)
 	while (n != 0)
 	{
 		n = n / 10;
-		len++;
+		count++;
 	}
-	return (len);
+	return (count);
 }
 
 char	*ft_itoa(int n)
 {
-	long int	digits;
+	size_t		digits;
 	char		*number;
 	size_t		i;
 	long int	nb;
 
 	nb = n;
 	if (nb < 0)
-		nb = nb * -1;
+		nb *= -1;
 	i = 0;
-	digits = len(n);
+	digits = ft_numlen(n);
 	if (n < 0)
-		digits = digits + 1;
+		digits++;
 	number = malloc(sizeof(char) * (digits + 1));
 	if (!number)
 		return (NULL);
 	if (n < 0)
-	{
-		number[i] = '-';
-		i++;
-	}
+		number[i++] = '-';
 	number[digits] = '\0';
 	while (digits > i)
 	{

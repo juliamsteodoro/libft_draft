@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 15:59:30 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/29 18:59:36 by marvin           ###   ########.fr       */
+/*   Updated: 2026/05/31 11:10:08 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,33 +34,19 @@ static size_t	ft_wordcount(char const *s, char c)
 static size_t	ft_wordlen(char const *s, char c)
 {
 	size_t	len;
-	size_t	i;
 
 	len = 0;
-	i = 0;
-	while (s[i] && s[i] != c)
-	{
+	while (s[len] && s[len] != c)
 		len++;
-		i++;
-	}
 	return (len);
 }
 
-char	**ft_split(char const *s, char c)
+static int	ft_fill_split(char **split, char const *s, char c)
 {
-	char	**split;
-	size_t	words;
 	size_t	i;
 	size_t	j;
 	size_t	len;
 
-	if (!s)
-		return (NULL);
-	len = 0;
-	words = ft_wordcount(s, c);
-	split = malloc(sizeof(char *) * (words + 1));
-	if (!split)
-		return (NULL);
 	i = 0;
 	j = 0;
 	while (s[i])
@@ -71,11 +57,29 @@ char	**ft_split(char const *s, char c)
 		{
 			len = ft_wordlen(&s[i], c);
 			split[j] = ft_substr(s, i, len);
+			if (!split[j])
+				return (0);
 			j++;
-			i = i + len;
+			i += len;
 		}
 	}
 	split[j] = NULL;
+	return (1);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**split;
+	size_t	words;
+
+	if (!s)
+		return (NULL);
+	words = ft_wordcount(s, c);
+	split = malloc(sizeof(char *) * (words + 1));
+	if (!split)
+		return (NULL);
+	if (!ft_fill_split(split, s, c))
+		return (NULL);
 	return (split);
 }
 

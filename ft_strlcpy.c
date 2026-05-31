@@ -15,14 +15,12 @@
 
 size_t	ft_strlcpy( char *dst, const char *src, size_t size)
 {
-	size_t	s;
+	size_t	len;
 	size_t	i;
 
 	if (!dst || !src)
-	{
 		return (0);
-	}
-	s = ft_strlen(src);
+	len = ft_strlen(src);
 	i = 0;
 	if (size != 0)
 	{
@@ -33,7 +31,7 @@ size_t	ft_strlcpy( char *dst, const char *src, size_t size)
 		}
 		dst[i] = '\0';
 	}
-	return (s);
+	return (len);
 }
 
 /*int main(void)

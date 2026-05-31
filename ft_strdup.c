@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 10:09:16 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/29 19:33:04 by marvin           ###   ########.fr       */
+/*   Updated: 2026/05/31 11:03:09 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,26 +15,14 @@
 
 char	*ft_strdup(const char *s)
 {
-	size_t	i;
+	size_t	len;
 	char	*copy;
 
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	copy = malloc(sizeof(char) * (i + 1));
+	len = ft_strlen(s);
+	copy = malloc(sizeof(char) * (len + 1));
 	if (!copy)
-	{
 		return (NULL);
-	}
-	i = 0;
-	while (s[i])
-	{
-		copy[i] = s[i];
-		i++;
-	}
-	copy[i] = '\0';
+	ft_strlcpy(copy, s, len + 1);
 	return (copy);
 }
 

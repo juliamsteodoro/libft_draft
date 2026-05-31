@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/18 16:55:28 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/29 18:59:14 by marvin           ###   ########.fr       */
+/*   Updated: 2026/05/30 22:02:29 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	unsigned char	*src_ptr;
 
 	i = 0;
-	dst_ptr = (unsigned char *) dst;
-	src_ptr = (unsigned char *) src;
+	dst_ptr = (unsigned char *)dst;
+	src_ptr = (unsigned char *)src;
 	while (i < n)
 	{
 		dst_ptr[i] = src_ptr[i];

@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/15 18:20:54 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/29 14:48:09 by marvin           ###   ########.fr       */
+/*   Updated: 2026/05/30 21:44:53 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,8 @@
 int	ft_isdigit(int c)
 {
 	if ((c >= 48 && c <= 57))
-	{
 		return (1);
-	}
-	else
-		return (0);
+	return (0);
 }
 
 /*int main(void)
