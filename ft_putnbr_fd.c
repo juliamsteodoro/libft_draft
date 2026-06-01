@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/28 12:16:18 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/30 22:18:12 by marvin           ###   ########.fr       */
+/*   Updated: 2026/06/01 10:39:48 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -29,15 +28,3 @@ void	ft_putnbr_fd(int n, int fd)
 	nbr = (nb % 10) + '0';
 	write(fd, &nbr, 1);
 }
-
-/*int main(void)
-{
-	ft_putnbr_fd(42, 1);
-	printf("\n");
-	ft_putnbr_fd(-42, 1);
-	printf("\n");
-	ft_putnbr_fd(1989, 1);
-	printf("\n");
-	return(0);
-}
-	*/

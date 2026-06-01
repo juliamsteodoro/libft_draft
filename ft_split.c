@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 15:59:30 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/31 11:10:08 by marvin           ###   ########.fr       */
+/*   Updated: 2026/06/01 10:40:00 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 static size_t	ft_wordcount(char const *s, char c)
 {
@@ -82,20 +81,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (split);
 }
-
-/*int main(void)
-{
-	char **result;
-	int		i;
-	
-	result = ft_split("42École Libft 1989", ' ');
-	
-	i = 0;
-	while(result[i])
-	{
-		printf("Split[%d]: %s\n", i, result[i]);
-		i++;
-	}
-	return(0);
-}
-	*/

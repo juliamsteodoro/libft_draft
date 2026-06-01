@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 11:41:15 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/30 21:36:05 by marvin           ###   ########.fr       */
+/*   Updated: 2026/06/01 10:37:28 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 #include "libft.h"
 
 int	ft_atoi(const char *str)
@@ -37,16 +36,3 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-
-/*int	main(void)
-{
-	printf("%d\n", ft_atoi("42"));
-	printf("%d\n", ft_atoi("   -42"));
-	printf("%d\n", ft_atoi("   +123"));
-	printf("%d\n", ft_atoi("0"));
-	printf("%d\n", ft_atoi("1989"));
-	printf("%d\n", ft_atoi("   ts1989"));
-	printf("%d\n", ft_atoi("ts13"));
-	return (0);
-}
-*/

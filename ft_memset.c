@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/18 16:45:40 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/31 11:04:37 by marvin           ###   ########.fr       */
+/*   Updated: 2026/06/01 10:39:25 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -27,14 +26,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
-/*int main(void)
-{
-	char str1[] = "Kanye West";
-	
-	printf("Antes: %s\n", str1);
-	ft_memset(str1, 'X', 10);
-	printf("Depois: %s\n", str1);
-	return(0);
-}
-	*/

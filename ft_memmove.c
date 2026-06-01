@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/25 14:33:37 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/30 22:10:17 by marvin           ###   ########.fr       */
+/*   Created: 2026/06/01 10:30:42 by jumoreir          #+#    #+#             */
+/*   Updated: 2026/06/01 10:39:18 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {
@@ -40,22 +39,3 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
-/*int main(void)
-{
-	char str1[] = "abcdefghijklmnopqrstuv";
-	char str2[] = "the tortured poets department";
-
-
-	printf("Antes:\n");
-	printf("destino: %s\n", str1);
-	printf("fonte: %s\n", str2);
-
-	ft_memmove(str1,str2, 29);
-
-	printf("Depois:\n");
-	printf("destino: %s\n", str1);
-	printf("fonte: %s\n", str2);
-	return(0);
-}
-	*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/15 18:20:54 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/30 21:44:53 by marvin           ###   ########.fr       */
+/*   Updated: 2026/06/01 10:38:14 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,3 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-
-/*int main(void)
-{
-	printf("%d\n", ft_isdigit('5'));
-	printf("%d\n", ft_isdigit('0'));
-	printf("%d\n", ft_isdigit('9'));
-	printf("%d\n", ft_isdigit('A'));
-	printf("%d\n", ft_isdigit('z'));
-	return (0);
-}
-*/

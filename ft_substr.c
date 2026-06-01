@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/26 11:49:27 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/31 10:50:19 by marvin           ###   ########.fr       */
+/*   Created: 2026/06/01 10:35:04 by jumoreir          #+#    #+#             */
+/*   Updated: 2026/06/01 10:41:36 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -31,13 +30,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_strlcpy(substr, s + start, len + 1);
 	return (substr);
 }
-
-/*int main(void)
-{
-	char s[] = "reputation stadium tour";
-	
-	printf("Texto: %s\n", s);
-	printf("Resultado: %s\n", ft_substr(s, 0, 10));
-	return(0);
-}
-	*/

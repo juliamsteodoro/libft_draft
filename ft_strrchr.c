@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/18 10:32:23 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/31 10:44:29 by marvin           ###   ########.fr       */
+/*   Created: 2026/06/01 10:34:54 by jumoreir          #+#    #+#             */
+/*   Updated: 2026/06/01 10:41:21 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -28,13 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)&s[0]);
 	return (NULL);
 }
-
-/*int main(void)
-{
-	char s[] = "Taylor Swift";
-
-	printf("String: %s\n", s);
-	printf("Resultado: %s\n", ft_strrchr(s, 'S'));
-	return(0);
-}
-	*/

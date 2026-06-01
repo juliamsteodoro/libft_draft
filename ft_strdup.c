@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 10:09:16 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/31 11:03:09 by marvin           ###   ########.fr       */
+/*   Updated: 2026/06/01 10:40:14 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 char	*ft_strdup(const char *s)
 {
@@ -25,17 +24,3 @@ char	*ft_strdup(const char *s)
 	ft_strlcpy(copy, s, len + 1);
 	return (copy);
 }
-
-/*int main(void)
-{
-	char *original;
-	char *dup;
-
-	original = "Taylor Swift";
-	dup = ft_strdup(original);
-
-	printf("Original: %s\n", original);
-	printf("Cópia: %s\n", dup);
-	return(0);
-}
-	*/

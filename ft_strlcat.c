@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/16 13:12:17 by marvin            #+#    #+#             */
-/*   Updated: 2026/05/16 13:12:17 by marvin           ###   ########.fr       */
+/*   Created: 2026/06/01 10:34:02 by jumoreir          #+#    #+#             */
+/*   Updated: 2026/06/01 10:34:02 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -35,18 +34,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[d] = '\0';
 	return (dlen + slen);
 }
-
-/*int main(void)
-{
-	char dest[13] = "Taylor ";
-	char src[] = "Swift";
-
-	printf("Antes: %s\n", dest);
-
-	long unsigned int result = ft_strlcat(dest, src, sizeof(dest));
-
-	printf("Depois: %s\n", dest);
-	printf("Retorno: %li\n", result);
-	return(0);
-}
-	*/

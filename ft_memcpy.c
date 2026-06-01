@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/18 16:55:28 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/30 22:02:29 by marvin           ###   ########.fr       */
+/*   Created: 2026/06/01 10:30:37 by jumoreir          #+#    #+#             */
+/*   Updated: 2026/06/01 10:39:11 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
@@ -29,15 +28,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
-/*int main(void)
-{
-	char src[] = "the life of a showgirl";
-	char dst[25] ;
-
-	printf("Antes: %s\n", dst);
-	ft_memcpy(dst, src, 22);
-	printf("Depois: %s\n", dst);
-	return(0);
-}
-	*/

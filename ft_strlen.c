@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/15 18:53:09 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/05/15 18:53:09 by jumoreir         ###   ########.fr       */
+/*   Created: 2026/06/01 10:34:17 by jumoreir          #+#    #+#             */
+/*   Updated: 2026/06/01 10:34:17 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 size_t	ft_strlen(const char *src)
 {
@@ -22,15 +21,3 @@ size_t	ft_strlen(const char *src)
 		i++;
 	return (i);
 }
-
-/*int main(void)
-{
-	char src[] = "Taylor Swift";
-	long int result;
-
-	printf("String: %s\n", src);
-	result = ft_strlen(src);
-	printf("Resultado: %li\n", result);
-	return(0);
-}
-	*/
