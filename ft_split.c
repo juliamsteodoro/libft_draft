@@ -6,7 +6,7 @@
 /*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 15:59:30 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/06/01 10:40:00 by jumoreir         ###   ########.fr       */
+/*   Updated: 2026/06/01 11:06:17 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,13 @@ static size_t	ft_wordlen(char const *s, char c)
 	return (len);
 }
 
+static void	ft_free_split(char **split, size_t j)
+{
+	while (j > 0)
+		free(split[--j]);
+	free(split);
+}
+
 static int	ft_fill_split(char **split, char const *s, char c)
 {
 	size_t	i;
@@ -57,7 +64,10 @@ static int	ft_fill_split(char **split, char const *s, char c)
 			len = ft_wordlen(&s[i], c);
 			split[j] = ft_substr(s, i, len);
 			if (!split[j])
+			{
+				ft_free_split(split, j);
 				return (0);
+			}
 			j++;
 			i += len;
 		}
