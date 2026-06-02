@@ -6,7 +6,7 @@
 /*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 10:35:22 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/06/01 10:35:24 by jumoreir         ###   ########.fr       */
+/*   Updated: 2026/06/02 13:08:05 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <limits.h>
+# include <stdint.h>
 
 typedef struct s_list
 {
 	void			*content;
-	int				a;
-	char			b;
 	struct s_list	*next;
 }	t_list;
 

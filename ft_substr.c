@@ -6,7 +6,7 @@
 /*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 10:35:04 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/06/01 10:41:36 by jumoreir         ###   ########.fr       */
+/*   Updated: 2026/06/02 13:07:39 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		len = 0;
 	else if (slen - start < len)
 		len = slen - start;
+	if (start >= ft_strlen(s))
+		return (ft_strdup(""));
 	substr = malloc(sizeof(char) * (len + 1));
 	if (!substr)
 		return (NULL);

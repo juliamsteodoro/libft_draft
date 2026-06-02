@@ -6,7 +6,7 @@
 /*   By: jumoreir <jumoreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 10:40:31 by jumoreir          #+#    #+#             */
-/*   Updated: 2026/06/01 10:37:47 by jumoreir         ###   ########.fr       */
+/*   Updated: 2026/06/02 12:45:53 by jumoreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*array;
 
+	if (size != 0 && count > SIZE_MAX / size)
+		return (NULL);
 	array = malloc(count * size);
 	if (!array)
 		return (NULL);
