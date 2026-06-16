@@ -17,17 +17,17 @@
 
 ## Description
 
-**Libft** é o primeiro projeto da 42 e um dos mais fundamentais. O objetivo é recriar funções padrão da biblioteca C (`libc`) do zero — já que o uso dessas funções é proibido nos projetos da escola. O resultado é uma biblioteca estática (`libft.a`) que pode ser linkada em projetos futuros e expandida ao longo do tempo.
+**Libft** is the first project at 42 and one of the most fundamental. The goal is to recreate standard C library functions (`libc`) from scratch — since using those functions is forbidden in the school's projects. The result is a static library (`libft.a`) that can be linked to future projects and expanded over time.
 
-Este projeto cobre:
-- Manipulação de strings e memória
-- Classificação e conversão de caracteres
-- Operações com listas encadeadas
-- Funções de output por file descriptor
+This project covers:
+- String and memory manipulation
+- Character classification and conversion
+- Linked list operations
+- Output functions using file descriptors
 
-**Principais aprendizados:**
-- Organizar e dividir um projeto em etapas
-- RTFM 📣 
+**Key learnings:**
+- Organizing and splitting a project into stages
+- RTFM 📣
 
 ---
 
@@ -36,10 +36,10 @@ Este projeto cobre:
 ### Compilation
 
 ```bash
-make          # compila a biblioteca (libft.a)
-make bonus    # inclui as funções de lista encadeada
-make clean    # remove os arquivos objeto
-make fclean   # remove os objetos e a libft.a
+make          # compiles the library (libft.a)
+make bonus    # includes linked list functions
+make clean    # removes object files
+make fclean   # removes object files and libft.a
 make re       # fclean + make
 ```
 
@@ -55,24 +55,24 @@ gcc your_file.c -L. -lft -o your_program
 
 ### Technical considerations
 
-- É proibido declarar variáveis globais.
-- Subfunções de funções complexas devem ser declaradas como `static`.
-- Todos os `.c` devem compilar com as flags obrigatórias.
-- A biblioteca deve ser criada com o comando `ar` — o uso de `libtool` é proibido.
-- É proibido submeter arquivos não utilizados.
+- Declaring global variables is forbidden.
+- Subfunctions of complex functions must be declared as `static`.
+- All `.c` files must compile with the mandatory flags.
+- The library must be created with the `ar` command — using `libtool` is forbidden.
+- Submitting unused files is forbidden.
 
 ### Norminette
 
-Os projetos da 42 devem seguir a **Norm**, o padrão de código da escola:
+42 projects must follow the **Norm**, the school's coding standard:
 
-- Proibido usar `for`, `do while`, `switch`, `case` ou `goto`
-- Máximo de 25 linhas por função e 5 funções por arquivo
-- Máximo de 5 variáveis por função
-- Proibido declarar e atribuir na mesma linha (exceto `static`)
+- Using `for`, `do while`, `switch`, `case` or `goto` is forbidden
+- Maximum of 25 lines per function and 5 functions per file
+- Maximum of 5 variables per function
+- Declaring and assigning on the same line is forbidden (except for `static`)
 
-Ferramentas:
-- [Norminette](https://github.com/42School/norminette) — verifica o código automaticamente
-- [42 Header](https://github.com/42Paris/42header) — cabeçalho padrão para Vim
+Tools:
+- [Norminette](https://github.com/42School/norminette) — automatically checks your code
+- [42 Header](https://github.com/42Paris/42header) — standard header for Vim
 
 ---
 
